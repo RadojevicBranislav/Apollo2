@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "362642433094",
+    "project_id": "apollo-f6f5e",
+    "storage_bucket": "apollo-f6f5e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:362642433094:android:bbaf971493350bd7e39647",
+        "android_client_info": {
+          "package_name": "com.pma.apolloapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "362642433094-mci58lk4cdt2oeljhj9pubq6qjr9f56f.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDKOSJHM1cidNDGzJcpPbU_QFyD64gku-I"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "362642433094-mci58lk4cdt2oeljhj9pubq6qjr9f56f.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
