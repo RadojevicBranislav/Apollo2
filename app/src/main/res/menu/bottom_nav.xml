@@ -5,7 +5,7 @@
         android:icon="@drawable/astronaut"/>
     <item android:title="App Info"
         android:id="@+id/profile"
-        android:icon="@drawable/ic_baseline_person_24"/>
+        android:icon="@drawable/ic_baseline_info_24"/>
 
     <item android:title="Log Out"
         android:id="@+id/logout"
