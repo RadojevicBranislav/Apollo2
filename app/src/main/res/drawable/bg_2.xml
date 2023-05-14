@@ -4,16 +4,11 @@
     <gradient android:startColor="#976f29"
         android:endColor="#5C4033"/>
 
-    <corners android:radius="15dp"/>
 
     <padding
         android:bottom="5dp"
         android:top="5dp"
         />
-    <stroke android:color="@color/black"
-        android:dashGap="3dp"
-        android:dashWidth="5dp"
-        android:width="3dp"/>
 
 
 

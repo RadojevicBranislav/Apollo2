@@ -5,7 +5,7 @@
     android:id="@+id/app"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/backinfo"
+    android:background="@drawable/bg_2"
     tools:context=".InfoFragment">
 
     <ImageView
@@ -32,7 +32,7 @@
         android:layout_height="43dp"
         android:layout_marginStart="10dp"
         android:layout_marginTop="10dp"
-        android:text="@string/app_info"
+        android:text="About"
         android:textColor="@color/darker_white"
         android:textSize="24sp"
         tools:text="App Info" />
@@ -40,30 +40,12 @@
     <TextView
         android:id="@+id/text"
         android:layout_width="375dp"
-        android:layout_height="276dp"
+        android:layout_height="578dp"
+        android:layout_marginStart="7dp"
         android:layout_marginTop="105dp"
         android:text="@string/string_srb"
+        android:textAlignment="center"
         android:textColor="@color/darker_white"
-        android:textSize="20sp"
-        android:layout_marginStart="7dp"
-        android:textAlignment="center"/>
-
-    <ImageView
-        android:id="@+id/iss"
-        android:layout_width="180dp"
-        android:layout_height="185dp"
-        android:src="@drawable/iss"
-        android:layout_marginTop="500dp"
-        android:layout_marginStart="10dp"
-        android:contentDescription="@string/iss_photo" />
-
-    <ImageView
-        android:id="@+id/shenzou"
-        android:layout_width="350dp"
-        android:layout_height="355dp"
-        android:layout_marginTop="420dp"
-        android:layout_marginStart="120dp"
-        android:src="@drawable/shenzou_15"
-        android:contentDescription="@string/shenzou15_photo"/>
+        android:textSize="20sp" />
 
 </FrameLayout>

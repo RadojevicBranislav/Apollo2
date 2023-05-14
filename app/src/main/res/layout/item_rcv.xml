@@ -18,38 +18,38 @@
         android:layout_marginEnd="15dp">
 
         <TextView
-            android:id="@+id/astronaut"
+            android:id="@+id/whiskey_name"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_alignParentStart="true"
             android:layout_alignParentTop="true"
-            android:layout_marginStart="100dp"
+            android:layout_marginStart="120dp"
             android:layout_marginLeft="30dp"
             android:layout_marginTop="25dp"
             android:layout_marginRight="20dp"
-            android:text="@string/astronaut_name"
+            android:text="whiskey name"
             android:textColor="@color/white"
             android:textStyle="bold" />
 
         <TextView
-            android:id="@+id/astronaut_craft"
+            android:id="@+id/type"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_alignParentStart="true"
             android:layout_alignParentTop="true"
-            android:layout_marginStart="100dp"
+            android:layout_marginStart="130dp"
             android:layout_marginLeft="40dp"
             android:layout_marginTop="55dp"
-            android:text="@string/astronaut_craft"
+            android:text="whiskey type"
             android:textColor="@color/white"
             android:textStyle="normal"
             />
 
         <ImageView
-            android:id="@+id/imageView2"
-            android:layout_width="95dp"
-            android:layout_height="95dp"
-            app:srcCompat="@drawable/iss"
+            android:id="@+id/image_whiskey"
+            android:layout_width="115dp"
+            android:layout_height="115dp"
+            app:srcCompat="@mipmap/ic_launcher"
             android:layout_marginTop="0dp"/>
     </RelativeLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
