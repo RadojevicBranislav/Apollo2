@@ -21,8 +21,8 @@ class InfoFragment : Fragment() {
     private var param1: String? = null
     private var param2: String? = null
 
-    private lateinit var img_srb: ImageView
-    private lateinit var img_eng: ImageView
+    private lateinit var img_srb: TextView
+    private lateinit var img_eng: TextView
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -72,8 +72,8 @@ class InfoFragment : Fragment() {
 
         var str_eng = resources.getString(R.string.string_eng)
 
-        img_srb = view.findViewById(R.id.img_srb)
-        img_eng = view.findViewById(R.id.img_usa)
+        img_srb = view.findViewById(R.id.textView2)
+        img_eng = view.findViewById(R.id.textView3)
 
 
         img_srb.setOnClickListener {

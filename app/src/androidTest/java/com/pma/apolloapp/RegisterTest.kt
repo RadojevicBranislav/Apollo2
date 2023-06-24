@@ -20,14 +20,29 @@ import org.junit.runner.RunWith
 
 @LargeTest
 @RunWith(AndroidJUnit4::class)
-class SignInAndAppTest {
+class RegisterTest {
 
     @Rule
     @JvmField
     var mActivityScenarioRule = ActivityScenarioRule(SplashScreen::class.java)
 
     @Test
-    fun signInAndAppTest() {
+    fun registerTest() {
+        val materialTextView = onView(
+            allOf(
+                withId(R.id.textView), withText("Don't have an account? Register."),
+                childAtPosition(
+                    childAtPosition(
+                        withId(android.R.id.content),
+                        0
+                    ),
+                    4
+                ),
+                isDisplayed()
+            )
+        )
+        materialTextView.perform(click())
+
         val appCompatEditText = onView(
             allOf(
                 withId(R.id.editTextTextEmailAddress),
@@ -36,16 +51,16 @@ class SignInAndAppTest {
                         withId(android.R.id.content),
                         0
                     ),
-                    0
+                    1
                 ),
                 isDisplayed()
             )
         )
-        appCompatEditText.perform(replaceText("bane123@gma.com"), closeSoftKeyboard())
+        appCompatEditText.perform(replaceText("test1234@gmail.com"), closeSoftKeyboard())
 
         val appCompatEditText2 = onView(
             allOf(
-                withId(R.id.editTextTextEmailAddress), withText("bane123@gma.com"),
+                withId(R.id.editTextTextPassword),
                 childAtPosition(
                     childAtPosition(
                         withId(android.R.id.content),
@@ -56,37 +71,52 @@ class SignInAndAppTest {
                 isDisplayed()
             )
         )
-        appCompatEditText2.perform(click())
+        appCompatEditText2.perform(replaceText("test123"), closeSoftKeyboard())
 
         val appCompatEditText3 = onView(
             allOf(
-                withId(R.id.editTextTextEmailAddress), withText("bane123@gma.com"),
+                withId(R.id.editTextTextPassword2),
                 childAtPosition(
                     childAtPosition(
                         withId(android.R.id.content),
                         0
                     ),
-                    0
+                    2
                 ),
                 isDisplayed()
             )
         )
-        appCompatEditText3.perform(replaceText("bane123@gmail.com"))
+        appCompatEditText3.perform(replaceText("test123"), closeSoftKeyboard())
+
+        val materialButton = onView(
+            allOf(
+                withId(R.id.button), withText("REGISTER"),
+                childAtPosition(
+                    childAtPosition(
+                        withId(android.R.id.content),
+                        0
+                    ),
+                    4
+                ),
+                isDisplayed()
+            )
+        )
+        materialButton.perform(click())
 
         val appCompatEditText4 = onView(
             allOf(
-                withId(R.id.editTextTextEmailAddress), withText("bane123@gmail.com"),
+                withId(R.id.editTextTextEmailAddress),
                 childAtPosition(
                     childAtPosition(
                         withId(android.R.id.content),
                         0
                     ),
-                    0
+                    1
                 ),
                 isDisplayed()
             )
         )
-        appCompatEditText4.perform(closeSoftKeyboard())
+        appCompatEditText4.perform(replaceText("test1234@gmail.com"), closeSoftKeyboard())
 
         val appCompatEditText5 = onView(
             allOf(
@@ -96,46 +126,16 @@ class SignInAndAppTest {
                         withId(android.R.id.content),
                         0
                     ),
-                    1
+                    0
                 ),
                 isDisplayed()
             )
         )
-        appCompatEditText5.perform(replaceText("123123"), closeSoftKeyboard())
-
-        val appCompatEditText6 = onView(
-            allOf(
-                withId(R.id.editTextTextPassword), withText("123123"),
-                childAtPosition(
-                    childAtPosition(
-                        withId(android.R.id.content),
-                        0
-                    ),
-                    1
-                ),
-                isDisplayed()
-            )
-        )
-        appCompatEditText6.perform(pressImeActionButton())
-
-        val materialButton = onView(
-            allOf(
-                withId(R.id.button), withText("SIGN IN"),
-                childAtPosition(
-                    childAtPosition(
-                        withId(android.R.id.content),
-                        0
-                    ),
-                    3
-                ),
-                isDisplayed()
-            )
-        )
-        materialButton.perform(click())
+        appCompatEditText5.perform(replaceText("test123"), closeSoftKeyboard())
 
         val bottomNavigationItemView = onView(
             allOf(
-                withId(R.id.profile), withContentDescription("App Info"),
+                withId(R.id.profile), withContentDescription("About"),
                 childAtPosition(
                     childAtPosition(
                         withId(R.id.bottomNavigationView),
@@ -148,9 +148,9 @@ class SignInAndAppTest {
         )
         bottomNavigationItemView.perform(click())
 
-        val appCompatImageView = onView(
+        val materialTextView2 = onView(
             allOf(
-                withId(R.id.img_usa), withContentDescription("Laguage change icon for English"),
+                withId(R.id.textView3), withText("English"),
                 childAtPosition(
                     allOf(
                         withId(R.id.app),
@@ -159,16 +159,16 @@ class SignInAndAppTest {
                             0
                         )
                     ),
-                    1
+                    3
                 ),
                 isDisplayed()
             )
         )
-        appCompatImageView.perform(click())
+        materialTextView2.perform(click())
 
-        val appCompatImageView2 = onView(
+        val materialTextView3 = onView(
             allOf(
-                withId(R.id.img_srb), withContentDescription("Laguage change icon for Serbian"),
+                withId(R.id.textView2), withText("Srpski"),
                 childAtPosition(
                     allOf(
                         withId(R.id.app),
@@ -177,29 +177,32 @@ class SignInAndAppTest {
                             0
                         )
                     ),
-                    0
+                    2
                 ),
                 isDisplayed()
             )
         )
-        appCompatImageView2.perform(click())
+        materialTextView3.perform(click())
+
+        val materialTextView4 = onView(
+            allOf(
+                withId(R.id.textView3), withText("English"),
+                childAtPosition(
+                    allOf(
+                        withId(R.id.app),
+                        childAtPosition(
+                            withId(R.id.frame_layout),
+                            0
+                        )
+                    ),
+                    3
+                ),
+                isDisplayed()
+            )
+        )
+        materialTextView4.perform(click())
 
         val bottomNavigationItemView2 = onView(
-            allOf(
-                withId(R.id.home), withContentDescription("Astronauts"),
-                childAtPosition(
-                    childAtPosition(
-                        withId(R.id.bottomNavigationView),
-                        0
-                    ),
-                    0
-                ),
-                isDisplayed()
-            )
-        )
-        bottomNavigationItemView2.perform(click())
-
-        val bottomNavigationItemView3 = onView(
             allOf(
                 withId(R.id.logout), withContentDescription("Log Out"),
                 childAtPosition(
@@ -212,7 +215,7 @@ class SignInAndAppTest {
                 isDisplayed()
             )
         )
-        bottomNavigationItemView3.perform(click())
+        bottomNavigationItemView2.perform(click())
     }
 
     private fun childAtPosition(

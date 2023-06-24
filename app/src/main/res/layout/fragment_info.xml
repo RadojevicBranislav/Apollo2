@@ -8,24 +8,6 @@
     android:background="@drawable/bg_2"
     tools:context=".InfoFragment">
 
-    <ImageView
-        android:id="@+id/img_srb"
-        android:layout_width="60dp"
-        android:layout_height="55dp"
-        android:layout_marginStart="270dp"
-        android:layout_marginTop="10dp"
-        android:contentDescription="@string/laguage_change_icon_for_serbian"
-        android:src="@drawable/srbija" />
-
-    <ImageView
-        android:id="@+id/img_usa"
-        android:layout_width="60dp"
-        android:layout_height="55dp"
-        android:layout_marginStart="335dp"
-        android:layout_marginTop="10dp"
-        android:contentDescription="@string/laguage_change_icon_for_english"
-        android:src="@drawable/amerika" />
-
     <TextView
         android:id="@+id/App_info"
         android:layout_width="102dp"
@@ -47,5 +29,25 @@
         android:textAlignment="center"
         android:textColor="@color/darker_white"
         android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="250dp"
+        android:text="Srpski"
+        android:textColor="@color/white"/>
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:textColor="@color/white"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="320dp"
+        android:text="English" />
 
 </FrameLayout>
