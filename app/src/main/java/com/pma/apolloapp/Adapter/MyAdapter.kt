@@ -27,9 +27,11 @@ class MyAdapter : RecyclerView.Adapter<MyAdapter.MyViewHolder>(){
 
         val currentItem = userList[position]
 
-        holder.type.text = currentItem.type
+        holder.type.text = currentItem.name
 
-        holder.name.text = currentItem.name
+        holder.name.text = currentItem.height
+
+        holder.height.text = currentItem.type
 
         Picasso.get().load(currentItem.image).into(holder.image)
 
@@ -50,11 +52,13 @@ class MyAdapter : RecyclerView.Adapter<MyAdapter.MyViewHolder>(){
 
     class MyViewHolder(itemView: View): RecyclerView.ViewHolder(itemView){
 
-        val image: ImageView = itemView.findViewById(R.id.image_whiskey)
+        val image: ImageView = itemView.findViewById(R.id.rcvImg)
 
-        val type: TextView = itemView.findViewById(R.id.type)
+        val type: TextView = itemView.findViewById(R.id.currency_name)
 
-        val name: TextView = itemView.findViewById(R.id.whiskey_name)
+        val name: TextView = itemView.findViewById(R.id.meters)
+
+        val height: TextView = itemView.findViewById(R.id.astronaut_craft)
 
     }
 

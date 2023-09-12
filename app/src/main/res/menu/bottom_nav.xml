@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
-    <item android:title="Whiskey"
+    <item android:title="Bikes"
         android:id="@+id/home"
-        android:icon="@drawable/drink"/>
+        android:icon="@drawable/motorcycle"/>
     <item android:title="About"
         android:id="@+id/profile"
         android:icon="@drawable/ic_baseline_info_24"/>

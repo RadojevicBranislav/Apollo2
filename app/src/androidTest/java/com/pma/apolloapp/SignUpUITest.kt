@@ -20,29 +20,14 @@ import org.junit.runner.RunWith
 
 @LargeTest
 @RunWith(AndroidJUnit4::class)
-class RegisterTest {
+class SignUpUITest {
 
     @Rule
     @JvmField
     var mActivityScenarioRule = ActivityScenarioRule(SplashScreen::class.java)
 
     @Test
-    fun registerTest() {
-        val materialTextView = onView(
-            allOf(
-                withId(R.id.textView), withText("Don't have an account? Register."),
-                childAtPosition(
-                    childAtPosition(
-                        withId(android.R.id.content),
-                        0
-                    ),
-                    4
-                ),
-                isDisplayed()
-            )
-        )
-        materialTextView.perform(click())
-
+    fun signUpUITest() {
         val appCompatEditText = onView(
             allOf(
                 withId(R.id.editTextTextEmailAddress),
@@ -56,7 +41,7 @@ class RegisterTest {
                 isDisplayed()
             )
         )
-        appCompatEditText.perform(replaceText("test1234@gmail.com"), closeSoftKeyboard())
+        appCompatEditText.perform(replaceText("testb2@gmail.com"), closeSoftKeyboard())
 
         val appCompatEditText2 = onView(
             allOf(
@@ -73,66 +58,6 @@ class RegisterTest {
         )
         appCompatEditText2.perform(replaceText("test123"), closeSoftKeyboard())
 
-        val appCompatEditText3 = onView(
-            allOf(
-                withId(R.id.editTextTextPassword2),
-                childAtPosition(
-                    childAtPosition(
-                        withId(android.R.id.content),
-                        0
-                    ),
-                    2
-                ),
-                isDisplayed()
-            )
-        )
-        appCompatEditText3.perform(replaceText("test123"), closeSoftKeyboard())
-
-        val materialButton = onView(
-            allOf(
-                withId(R.id.button), withText("REGISTER"),
-                childAtPosition(
-                    childAtPosition(
-                        withId(android.R.id.content),
-                        0
-                    ),
-                    4
-                ),
-                isDisplayed()
-            )
-        )
-        materialButton.perform(click())
-
-        val appCompatEditText4 = onView(
-            allOf(
-                withId(R.id.editTextTextEmailAddress),
-                childAtPosition(
-                    childAtPosition(
-                        withId(android.R.id.content),
-                        0
-                    ),
-                    1
-                ),
-                isDisplayed()
-            )
-        )
-        appCompatEditText4.perform(replaceText("test1234@gmail.com"), closeSoftKeyboard())
-
-        val appCompatEditText5 = onView(
-            allOf(
-                withId(R.id.editTextTextPassword),
-                childAtPosition(
-                    childAtPosition(
-                        withId(android.R.id.content),
-                        0
-                    ),
-                    0
-                ),
-                isDisplayed()
-            )
-        )
-        appCompatEditText5.perform(replaceText("test123"), closeSoftKeyboard())
-
         val bottomNavigationItemView = onView(
             allOf(
                 withId(R.id.profile), withContentDescription("About"),
@@ -148,7 +73,7 @@ class RegisterTest {
         )
         bottomNavigationItemView.perform(click())
 
-        val materialTextView2 = onView(
+        val materialTextView = onView(
             allOf(
                 withId(R.id.textView3), withText("English"),
                 childAtPosition(
@@ -164,9 +89,9 @@ class RegisterTest {
                 isDisplayed()
             )
         )
-        materialTextView2.perform(click())
+        materialTextView.perform(click())
 
-        val materialTextView3 = onView(
+        val materialTextView2 = onView(
             allOf(
                 withId(R.id.textView2), withText("Srpski"),
                 childAtPosition(
@@ -182,9 +107,9 @@ class RegisterTest {
                 isDisplayed()
             )
         )
-        materialTextView3.perform(click())
+        materialTextView2.perform(click())
 
-        val materialTextView4 = onView(
+        val materialTextView3 = onView(
             allOf(
                 withId(R.id.textView3), withText("English"),
                 childAtPosition(
@@ -200,7 +125,61 @@ class RegisterTest {
                 isDisplayed()
             )
         )
+        materialTextView3.perform(click())
+
+        val materialTextView4 = onView(
+            allOf(
+                withId(R.id.textView2), withText("Srpski"),
+                childAtPosition(
+                    allOf(
+                        withId(R.id.app),
+                        childAtPosition(
+                            withId(R.id.frame_layout),
+                            0
+                        )
+                    ),
+                    2
+                ),
+                isDisplayed()
+            )
+        )
         materialTextView4.perform(click())
+
+        val materialTextView5 = onView(
+            allOf(
+                withId(R.id.textView3), withText("English"),
+                childAtPosition(
+                    allOf(
+                        withId(R.id.app),
+                        childAtPosition(
+                            withId(R.id.frame_layout),
+                            0
+                        )
+                    ),
+                    3
+                ),
+                isDisplayed()
+            )
+        )
+        materialTextView5.perform(click())
+
+        val materialTextView6 = onView(
+            allOf(
+                withId(R.id.textView2), withText("Srpski"),
+                childAtPosition(
+                    allOf(
+                        withId(R.id.app),
+                        childAtPosition(
+                            withId(R.id.frame_layout),
+                            0
+                        )
+                    ),
+                    2
+                ),
+                isDisplayed()
+            )
+        )
+        materialTextView6.perform(click())
 
         val bottomNavigationItemView2 = onView(
             allOf(
@@ -216,6 +195,36 @@ class RegisterTest {
             )
         )
         bottomNavigationItemView2.perform(click())
+
+        val materialTextView7 = onView(
+            allOf(
+                withId(R.id.textView), withText("Don't have an account? Register."),
+                childAtPosition(
+                    childAtPosition(
+                        withId(android.R.id.content),
+                        0
+                    ),
+                    4
+                ),
+                isDisplayed()
+            )
+        )
+        materialTextView7.perform(click())
+
+        val materialTextView8 = onView(
+            allOf(
+                withId(R.id.textView), withText("Already registered, sign in!"),
+                childAtPosition(
+                    childAtPosition(
+                        withId(android.R.id.content),
+                        0
+                    ),
+                    5
+                ),
+                isDisplayed()
+            )
+        )
+        materialTextView8.perform(click())
     }
 
     private fun childAtPosition(

@@ -1,4 +1,4 @@
 package com.pma.apolloapp.Models
 
-
-data class User(var type : String ?= null, var name : String ?= null, var image: String?=null)
+data class User(val image :String?=null, val name: String ?=null, val type: String ?= null
+, val height: String ?= null)
