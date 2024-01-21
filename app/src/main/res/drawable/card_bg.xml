@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <shape xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <gradient android:startColor="#960b6c"
-        android:endColor="#7304db"/>
+    <gradient android:startColor="#002582"
+        android:endColor="#0095ff"/>
 
     <padding
         android:bottom="5dp"
         android:top="5dp"
         />
-    <stroke android:color="#0569f5"
-        android:dashGap="3dp"
-        android:dashWidth="5dp"
+    <stroke android:color="#820000"
+        android:dashGap="5dp"
+        android:dashWidth="2dp"
         android:width="3dp"/>
 
 
