@@ -1,33 +1,150 @@
 {
   "project_info": {
-    "project_number": "362642433094",
-    "project_id": "apollo-f6f5e",
-    "storage_bucket": "apollo-f6f5e.appspot.com"
+    "project_number": "867977337150",
+    "firebase_url": "https://apollo-app-72a00-default-rtdb.europe-west1.firebasedatabase.app",
+    "project_id": "apollo-app-72a00",
+    "storage_bucket": "apollo-app-72a00.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:362642433094:android:bbaf971493350bd7e39647",
+        "mobilesdk_app_id": "1:867977337150:android:9cfeacd9b7e401b25e746f",
         "android_client_info": {
-          "package_name": "com.pma.apolloapp"
+          "package_name": "com.example.apollo_app"
         }
       },
       "oauth_client": [
         {
-          "client_id": "362642433094-mci58lk4cdt2oeljhj9pubq6qjr9f56f.apps.googleusercontent.com",
+          "client_id": "867977337150-l3ataoq47c5fjslomdqkse34710676o2.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyDKOSJHM1cidNDGzJcpPbU_QFyD64gku-I"
+          "current_key": "AIzaSyAI5CjEGeHAO4cVoIsaUlny1XjN5UCkohg"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "362642433094-mci58lk4cdt2oeljhj9pubq6qjr9f56f.apps.googleusercontent.com",
+              "client_id": "867977337150-l3ataoq47c5fjslomdqkse34710676o2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:867977337150:android:77246f437e035c2e5e746f",
+        "android_client_info": {
+          "package_name": "com.example.app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "867977337150-l3ataoq47c5fjslomdqkse34710676o2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAI5CjEGeHAO4cVoIsaUlny1XjN5UCkohg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "867977337150-l3ataoq47c5fjslomdqkse34710676o2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:867977337150:android:d00f1f3a1e29f1975e746f",
+        "android_client_info": {
+          "package_name": "com.example.myapplication77"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "867977337150-l3ataoq47c5fjslomdqkse34710676o2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAI5CjEGeHAO4cVoIsaUlny1XjN5UCkohg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "867977337150-l3ataoq47c5fjslomdqkse34710676o2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:867977337150:android:7b610664355aa7ed5e746f",
+        "android_client_info": {
+          "package_name": "com.pma.apolloapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "867977337150-l3ataoq47c5fjslomdqkse34710676o2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAI5CjEGeHAO4cVoIsaUlny1XjN5UCkohg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "867977337150-l3ataoq47c5fjslomdqkse34710676o2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:867977337150:android:fbe7f8315f96e26f5e746f",
+        "android_client_info": {
+          "package_name": "com.pma.myapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "867977337150-l3ataoq47c5fjslomdqkse34710676o2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAI5CjEGeHAO4cVoIsaUlny1XjN5UCkohg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "867977337150-l3ataoq47c5fjslomdqkse34710676o2.apps.googleusercontent.com",
               "client_type": 3
             }
           ]

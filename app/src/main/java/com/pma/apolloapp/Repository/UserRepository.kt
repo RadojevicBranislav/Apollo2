@@ -1,13 +1,12 @@
 package com.pma.apolloapp.Repository
 
 import androidx.lifecycle.MutableLiveData
-import androidx.lifecycle.ViewModelProvider.NewInstanceFactory.Companion.instance
 import com.google.firebase.database.*
 import com.pma.apolloapp.Models.User
 
 class UserRepository {
 
-    private val databaseReference : DatabaseReference = FirebaseDatabase.getInstance().getReference("users")
+    private val databaseReference : DatabaseReference = FirebaseDatabase.getInstance("https://apollo-app-72a00-default-rtdb.europe-west1.firebasedatabase.app").getReference("users")
 
     @Volatile private var INSTANCE : UserRepository ?= null
 
